@@ -1,0 +1,166 @@
+﻿@page
+@{
+    ViewData["Title"] = "MethodConf";
+}
+
+<header class="site_header">
+    <div class="container">
+        <div class="intro">
+            <a href="/"><img src="/images/method_logo.svg" alt="Method Logo"></a>
+            <h1>
+                <time datetime="2020-03-05 08:00">Thursday, March 5th, 2020</time> in Springfield, MO
+            </h1>
+            <h2>An immersive day of code, design and content</h2>
+        </div>
+    </div>
+    
+    <div class="skyline">
+        <img src="/images/skyline.svg" alt="Skyline Graphic">
+    </div>
+</header>
+
+<nav class="site_nav">
+    <div class="container">
+        <ul>
+            <li>
+                <a class="button" href="#">Schedule</a>
+            </li>
+            <li>
+                <a class="button" href="#">Location</a>
+            </li>
+            <li>
+                <a class="button" href="#">Sponsors</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="intro_signup">
+    <section>
+        <div class="content">
+            <h3>Invest In Yourself and Hone Your Craft</h3>
+            <p>
+                Method Conference Springfield, MO is an emersive one-day conference with 6 sessions, workshops and keynote with an intense focus on digital development, design, UX, content, code, and more. Giving you perspective to access your skillset and see where things are going next.
+            </p>
+        </div>
+    </section>
+    
+    <section>
+        <div class="content">
+            <strong>Stay in-the-know about event updates, new speakers and exclusive offers from our sponsors.</strong>
+            
+            <form action="">
+                <ul>
+                    <li>
+                        <div class="form_field">
+                            <input type="text" name="name" id="name" placeholder="Name" required="required">
+                        </div>
+                    </li>
+                            
+                    <li>
+                        <div class="form_field">
+                            <input type="email" name="email" id="email" placeholder="Email" required="required">
+                        </div>
+                    </li>
+                            
+                    <li>
+                        <button>Email Signup</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </section>
+</div>
+
+<div class="section_header" id="schedule">
+    <div class="tab">
+        <h3>Event Schedule</h3>
+    </div>
+    <div class="actions">
+        <a href="#"><i class="fas fa-expand-alt"></i> <span>Show Extended Schedule</span></a>
+        <a href="#"><i class="fas fa-calendar-alt"></i> <span>Add To My Calendar</span></a>
+    </div>
+</div>
+
+<div class="event_schedule s_container">
+    <h3>Thursday, March 5th, 2020</h3>
+    
+    <div class="day_half">
+        <hgroup>
+            <h3>Main Track</h3>
+            <h3>Workshop Track</h3>
+        </hgroup>
+        
+        <div class="sessions">
+            <section>
+                @for (int i = 0; i < 3; i++)
+                {
+                    <div class="speaker_card">
+                        <time>8:00AM–9:00AM</time>
+                    
+                        <div class="profile">
+                            <img src="/images/speakers/jordan_morgan.jpg" alt="Jordan Morgan">
+                        
+                            <div class="titles">
+                                <h4>SwiftUI</h4>
+                                <a href="#">Jordan Morgan</a>
+                                <span>iOS engineer at Buffer</span>
+                            </div>
+                        
+                            <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
+                        </div>
+                    </div>
+                }
+            </section>
+            <section>
+                <div class="speaker_card">
+                    <time>8:00AM–9:00AM</time>
+                                    
+                    <div class="profile">
+                        <img src="/images/speakers/amber_gillenwaters.jpeg" alt="Amber Gillenwaters">
+                                        
+                        <div class="titles">
+                            <h4>Machine learning</h4>
+                            <a href="#">Amber Gillenwaters</a>
+                            <span>Freelance Data Scientist</span>
+                        </div>
+                                        
+                        <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
+                    </div>
+                </div>
+                
+                <div class="speaker_card">
+                    <time>8:00AM–9:00AM</time>
+                                                    
+                    <div class="profile">
+                        <img src="/images/speakers/amber_gillenwaters.jpeg" alt="Amber Gillenwaters">
+                                                        
+                        <div class="titles">
+                            <h4>Machine learning</h4>
+                            <a href="#">Amber Gillenwaters</a>
+                            <span>Freelance Data Scientist</span>
+                        </div>
+                                                        
+                        <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<div class="section_header" id="location">
+    <div class="tab">
+        <h3>Location Info</h3>
+    </div>
+    <div class="actions">
+        <a href="#"><i class="fas fa-map-marker-alt"></i> <span>Directions</span></a>
+        <a href="#"><i class="fas fa-calendar-alt"></i> <span>Add To My Calendar</span></a>
+    </div>
+</div>
+
+<div class="section_header" id="location">
+    <div class="tab">
+        <h3>Sponsors</h3>
+    </div>
+</div>

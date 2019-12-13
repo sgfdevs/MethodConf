@@ -1,0 +1,76 @@
+.event_schedule
+{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    h3 {
+        font-weight: 100;
+        font-size: 40px;
+        color: #222222;
+        letter-spacing: 0.13px;
+        line-height: 60px;
+        margin: 0 0 34px 0;
+    }
+    
+    .day_half {
+        hgroup {
+            
+        }
+        
+        hgroup, .sessions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 48px;
+        }
+    }
+
+    .sessions section {
+        display: grid;
+        grid-row-gap: 30px;
+    }
+
+    // Main Track Sessions
+    .sessions section:first-of-type {
+        grid-template-areas:
+                "session1"
+                "session2"
+                "session3";
+        
+        .speaker_card:nth-child(1) {
+            grid-area: session1;
+        }
+
+        .speaker_card:nth-child(2) {
+            grid-area: session2;
+        }
+
+        .speaker_card:nth-child(3) {
+            grid-area: session3;
+        }
+    }
+
+    // Workshop Sessions
+    .sessions section:last-of-type {
+        grid-template-areas:
+                "session1"
+                "session1"
+                "session2";
+
+        .speaker_card:nth-child(1) {
+            grid-area: session1;
+        }
+
+        .speaker_card:nth-child(2) {
+            grid-area: session2;
+        }
+    }
+    
+    .sessions {
+        .speaker_card {
+            
+            .profile {
+                align-self: center;
+            }
+        }
+    }
+}
