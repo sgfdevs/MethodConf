@@ -1,6 +1,9 @@
 ﻿@page
+@using MethodConf.Classes
+@using Microsoft.AspNetCore.Mvc.Rendering
 @{
     ViewData["Title"] = "MethodConf";
+    var sessions = SessionRepository.GetSessions();
 }
 
 <header class="site_header">
@@ -85,67 +88,28 @@
 <div class="event_schedule s_container">
     <h3>Thursday, March 5th, 2020</h3>
     
-    <div class="day_half">
-        <hgroup>
-            <h3>Main Track</h3>
-            <h3>Workshop Track</h3>
-        </hgroup>
-        
-        <div class="sessions">
-            <section>
-                @for (int i = 0; i < 3; i++)
-                {
-                    <div class="speaker_card">
-                        <time>8:00AM–9:00AM</time>
-                    
-                        <div class="profile">
-                            <img src="/images/speakers/jordan_morgan.jpg" alt="Jordan Morgan">
-                        
-                            <div class="titles">
-                                <h4>SwiftUI</h4>
-                                <a href="#">Jordan Morgan</a>
-                                <span>iOS engineer at Buffer</span>
-                            </div>
-                        
-                            <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
-                        </div>
-                    </div>
-                }
-            </section>
-            <section>
-                <div class="speaker_card">
-                    <time>8:00AM–9:00AM</time>
-                                    
-                    <div class="profile">
-                        <img src="/images/speakers/amber_gillenwaters.jpeg" alt="Amber Gillenwaters">
-                                        
-                        <div class="titles">
-                            <h4>Machine learning</h4>
-                            <a href="#">Amber Gillenwaters</a>
-                            <span>Freelance Data Scientist</span>
-                        </div>
-                                        
-                        <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
-                    </div>
-                </div>
-                
-                <div class="speaker_card">
-                    <time>8:00AM–9:00AM</time>
-                                                    
-                    <div class="profile">
-                        <img src="/images/speakers/amber_gillenwaters.jpeg" alt="Amber Gillenwaters">
-                                                        
-                        <div class="titles">
-                            <h4>Machine learning</h4>
-                            <a href="#">Amber Gillenwaters</a>
-                            <span>Freelance Data Scientist</span>
-                        </div>
-                                                        
-                        <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
-                    </div>
-                </div>
-            </section>
+    <div class="speaker_card inline">
+        <time>7:00AM–8:00AM</time>
+    
+        <div class="profile">
+            <div class="titles">
+                <h4>Attendee Check-in/Badge Pick-up</h4>
+            </div>
+            
+            <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
         </div>
+    </div>
+    
+    <hgroup>
+        <h3>Main Track</h3>
+        <h3>Workshop Track</h3>
+    </hgroup>
+    
+    <div class="session_block">
+        @foreach (var session in sessions)
+        {
+            @Html.Partial("SpeakerCard", session)
+        }
     </div>
 </div>
 

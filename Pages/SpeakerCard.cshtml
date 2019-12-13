@@ -1,0 +1,23 @@
+@model MethodConf.Classes.Session
+
+<div class="speaker_card">
+    <time>@Model.TimeLabel</time>
+
+    <div class="profile">
+        @if (Model.Speaker != null)
+        {
+            <img src="@Model.Speaker.Image" alt="@Model.Speaker.Name">   
+        }
+
+        <div class="titles">
+            <h4>@Model.Title</h4>
+            @if (Model.Speaker != null)
+            {
+                <a href="#">@Model.Speaker.Name</a>
+                <span>@Model.Speaker.Title</span>   
+            }
+        </div>
+        
+        <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
+    </div>
+</div>

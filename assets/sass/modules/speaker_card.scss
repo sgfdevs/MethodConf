@@ -45,7 +45,7 @@
             line-height: 24px;
         }
         
-        .titles {
+        img + .titles {
             margin: 0 12px;
         }
     }
@@ -64,6 +64,20 @@
             color: #000;
             font-size: 14px;
             margin-left: 10px;
+        }
+    }
+    
+    &.inline {
+        flex-direction: row;
+        align-items: center;
+        
+        time {
+            flex-shrink: 0;
+        }
+        
+        .profile {
+            padding-top: 0;
+            margin-left: 34px;
         }
     }
 }

@@ -11,66 +11,42 @@
         line-height: 60px;
         margin: 0 0 34px 0;
     }
-    
-    .day_half {
-        hgroup {
-            
-        }
-        
-        hgroup, .sessions {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 48px;
-        }
-    }
 
-    .sessions section {
+    hgroup {
         display: grid;
-        grid-row-gap: 30px;
-    }
-
-    // Main Track Sessions
-    .sessions section:first-of-type {
-        grid-template-areas:
-                "session1"
-                "session2"
-                "session3";
-        
-        .speaker_card:nth-child(1) {
-            grid-area: session1;
-        }
-
-        .speaker_card:nth-child(2) {
-            grid-area: session2;
-        }
-
-        .speaker_card:nth-child(3) {
-            grid-area: session3;
-        }
-    }
-
-    // Workshop Sessions
-    .sessions section:last-of-type {
-        grid-template-areas:
-                "session1"
-                "session1"
-                "session2";
-
-        .speaker_card:nth-child(1) {
-            grid-area: session1;
-        }
-
-        .speaker_card:nth-child(2) {
-            grid-area: session2;
-        }
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 48px;
+        margin-top: 30px;
     }
     
-    .sessions {
-        .speaker_card {
-            
-            .profile {
-                align-self: center;
-            }
-        }
+    .session_block {
+        display: grid;
+        grid-gap: 48px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "main1 workshop1"
+            "main2 workshop1"
+            "main3 workshop2_1"
+            "lunch lunch"
+            "main4 workshop2_2"
+            "main5 workshop3"
+            "main6 workshop3"
+            "keynote keynote";
+        
+        .speaker_card:nth-child(1) { grid-area: main1; }
+        .speaker_card:nth-child(2) { grid-area: main2; }
+        .speaker_card:nth-child(3) { grid-area: main3; }
+        .speaker_card:nth-child(4) { grid-area: workshop1; }
+        .speaker_card:nth-child(5) { grid-area: workshop2_1; }
+
+        .speaker_card:nth-child(6) { grid-area: lunch; }
+
+        .speaker_card:nth-child(7) { grid-area: main4; }
+        .speaker_card:nth-child(8) { grid-area: main5; }
+        .speaker_card:nth-child(9) { grid-area: main6; }
+        .speaker_card:nth-child(10) { grid-area: workshop2_2; }
+        .speaker_card:nth-child(11) { grid-area: workshop3; }
+
+        .speaker_card:nth-child(12) { grid-area: keynote; }
     }
 }
