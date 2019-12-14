@@ -9,16 +9,16 @@
         <PackageReference Include="Microsoft.AspNetCore.App" />
     </ItemGroup>
 
-    <Target Name="NpmInstall" BeforeTargets="Build" Condition=" !Exists('$(HorseRoot)node_modules') ">
+    <!-- <Target Name="NpmInstall" BeforeTargets="Build" Condition=" !Exists('$(HorseRoot)node_modules') ">
         <Message Importance="high" Text="Running npm install. You'll be horsing around in no time..." />
         <Exec Command="npm install" />
-    </Target>
+    </Target> -->
     
-    <Target Name="BuildCSS" BeforeTargets="Build">
+    <!-- <Target Name="BuildCSS" BeforeTargets="Build">
         <Exec Command="npm run build-css" ContinueOnError="true">
             <Output TaskParameter="ConsoleOutput" PropertyName="OutputOfExec" />
             <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
         </Exec>
-    </Target>
+    </Target> -->
 
 </Project>
