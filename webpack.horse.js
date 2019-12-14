@@ -31,6 +31,7 @@ module.exports = {
     plugins: [
         new BrowserSyncPlugin({
             proxy: 'https://localhost:5001',
+            open: false,
             files: [
                 //   'wwwroot/css/styles.css',
                 //   'wwwroot/js/site.js',

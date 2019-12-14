@@ -1,7 +1,7 @@
 .section_header
 {
     background: #1A1919 url("/images/graphic_left.svg") bottom left no-repeat;
-    padding: 118px 112px 0 112px;
+    padding: 118px $site_padding_large 0 $site_padding_large;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,6 +25,7 @@
             color: #D72F32;
             margin-right: 30px;
             display: flex;
+            text-decoration: none;
             
             span {
                 text-decoration: underline;

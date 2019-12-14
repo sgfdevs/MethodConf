@@ -32,8 +32,12 @@ img {
     max-width: 100%;
 }
 
+a {
+    color: #D72F32;
+    text-decoration: underline;
+}
+
 a, a:visited, a:active, a:hover {
-    text-decoration: none;
     outline: none !important;
     border: none;
 }
@@ -45,5 +49,10 @@ a, a:visited, a:active, a:hover {
 }
 
 .s_container {
-    padding: 0 112px;
+    padding: 0 $site_padding_large;
+    
+    @include mq-large-tablet
+    {
+        padding: 0 20px;
+    }
 }

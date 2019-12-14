@@ -8,8 +8,9 @@
     background: #000;
     display: block;
     padding: 16px;
-    
+    text-decoration: none;
     transition: transform 0.15s;
+    @include FontSourceSans;
     
     &:hover {
         transform: translateY(-3px);
