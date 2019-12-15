@@ -1,4 +1,4 @@
-.button, button {
+.button, button, .swal-button, .swal-button--confirm {
     font-weight: bold;
     font-size: 16px;
     color: #fff;
@@ -10,13 +10,17 @@
     padding: 16px;
     text-decoration: none;
     transition: transform 0.15s;
+    border-radius: 0;
+    outline: none;
     @include FontSourceSans;
     
-    &:hover {
+    &:hover, &:not([disabled]):hover {
         transform: translateY(-3px);
+        background: #000;
     }
     
     &:focus {
         outline: none;
+        box-shadow: none;
     }
 }
