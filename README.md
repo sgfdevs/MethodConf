@@ -1,4 +1,4 @@
-# HorseStrap
+# Method Conf Website
 
 ![Method Conf Website Design](https://sgf.dev/images/home_page.jpg)
 
