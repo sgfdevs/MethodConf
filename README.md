@@ -1,6 +1,6 @@
-# HorseStrap
+# Method Conf Website
 
-![alternativetext](https://horsestrap.com/images/nily.svg)
+![Method Conf Website Design](https://sgf.dev/images/home_page.jpg)
 
 Requirements are
 
