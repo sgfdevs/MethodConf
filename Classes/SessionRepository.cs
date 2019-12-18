@@ -20,7 +20,7 @@ namespace MethodConf.Classes
             {
                 Image = "/images/speakers/charlie_rosenbury.jpeg",
                 Name = "Charlie Rosenbury",
-                Title = "iOS engineer at Buffer",
+                Title = "President of Self Interactive",
                 Url = "#"
             };
             
