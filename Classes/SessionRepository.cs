@@ -165,7 +165,7 @@ namespace MethodConf.Classes
             
             var keynote = new Session
             {
-                Title = "Keynote: Lorem Ipsum",
+                Title = "Keynote",
                 TimeLabel = "4:30PM-5:30PM",
                 Description = "",
                 SessionType = SessionType.Keynote,
