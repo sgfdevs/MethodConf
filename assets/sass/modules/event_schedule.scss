@@ -3,13 +3,36 @@
     padding-top: 60px;
     padding-bottom: 60px;
     
-    h3 {
+    @mixin schedule_header {
         font-weight: 100;
         font-size: 40px;
         color: #222222;
         letter-spacing: 0.13px;
         line-height: 60px;
         margin: 0 0 34px 0;
+        
+        @include mq-small
+        {
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+    
+    @mixin pseudo_header($label) {
+        margin-top: 32px;
+
+        &:before {
+            @include schedule_header;
+            content: $label;
+            position: absolute;
+            top: -37px;
+            left: 0;
+        }
+    }
+    
+    h3 {
+        @include schedule_header;
     }
 
     hgroup {
@@ -49,5 +72,50 @@
         .speaker_card:nth-child(11) { grid-area: workshop3; }
 
         .speaker_card:nth-child(12) { grid-area: keynote; }
+
+        .speaker_card:last-child {
+            display: none;
+        }
+    }
+    
+    @include mq-small
+    {
+        hgroup {
+            display: none;
+        }
+        
+        .session_block {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2em;
+            
+            .speaker_card {
+                margin-bottom: 30px;
+            }
+            
+            // Main Track
+            .speaker_card:nth-child(1) { order: 1; }
+            .speaker_card:nth-child(2) { order: 2; }
+            .speaker_card:nth-child(3) { order: 3; }
+            .speaker_card:nth-child(6) { order: 4; } // Lunch
+            .speaker_card:nth-child(7) { order: 5; }
+            .speaker_card:nth-child(8) { order: 6; }
+            .speaker_card:nth-child(9) { order: 7; }
+
+            // Workshop Track
+            .speaker_card:nth-child(4) { order: 8; }
+            .speaker_card:nth-child(5) { order: 9; }
+            .speaker_card:last-child {   order: 10; display: block; } // Lunch
+            .speaker_card:nth-child(10) { order: 11; }
+            .speaker_card:nth-child(11) { order: 12; }
+
+            // Keynote
+            .speaker_card:nth-child(12) { order: 13; }
+
+            // Pseudo Headers
+            .speaker_card:nth-child(1) { @include pseudo_header('Main Track') }
+            .speaker_card:nth-child(4) { @include pseudo_header('Workshop Track') }
+            .speaker_card:nth-child(12) { @include pseudo_header('Keynote') }
+        }
     }
 }

@@ -87,4 +87,13 @@
             }
         }
     }
+    
+    @include mq-small
+    {
+        display: block;
+        
+        section:first-of-type {
+            margin-bottom: 4em;
+        }
+    }
 }

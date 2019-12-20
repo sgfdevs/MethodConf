@@ -42,5 +42,37 @@
             position: relative;
             top: 9px;
         }
+        
+        img:last-child {
+            display: none;
+        }
+    }
+    
+    @include mq-small
+    {
+        h1 {
+            font-weight: normal;
+            font-size: 22px;
+            text-align: center;
+            line-height: 28px;
+        }
+        
+        h2 {
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+    
+    @include mq-mobile
+    {
+        .skyline {
+            img:first-child {
+                display: none;
+            }
+
+            img:last-child {
+                display: block;
+            }
+        }
     }
 }

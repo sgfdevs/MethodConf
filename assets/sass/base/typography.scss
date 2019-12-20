@@ -26,3 +26,9 @@ h3 {
     letter-spacing: 0.17px;
     margin: 0;
 }
+
+@mixin paragraph_large {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+}

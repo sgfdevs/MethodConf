@@ -21,4 +21,11 @@
             }
         }
     }
+    
+    @include mq-small
+    {
+        .container {
+            //padding: 0;
+        }
+    }
 }

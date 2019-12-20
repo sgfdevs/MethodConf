@@ -20,6 +20,7 @@
     
     <div class="skyline">
         <img src="/images/skyline.svg" alt="Skyline Graphic">
+        <img src="/images/skyline_mobile.svg" alt="Skyline Graphic">
     </div>
 </header>
 
@@ -44,7 +45,11 @@
         <div class="content">
             <h3>Invest In Yourself and Hone Your Craft</h3>
             <p>
-                Method Conference Springfield, MO is an emersive one-day conference with 6 sessions, workshops and keynote with an intense focus on digital development, design, UX, content, code, and more. Giving you perspective to access your skillset and see where things are going next.
+                Method Conference Springfield, MO is an immersive one-day conference with 6 sessions, workshops and keynote with an intense focus on digital development, design, UX, content, code, and more. Giving you perspective to access your skillset and see where things are going next.
+            </p>
+            
+            <p>
+                <a class="button" href="#">Seating Is Limited - Register Now!</a>
             </p>
             
             <h3>Call for Presenters</h3>
@@ -116,6 +121,19 @@
         {
             @Html.Partial("SpeakerCard", session)
         }
+        
+        <div class="speaker_card track_lunch">
+            <time>11:30AM–1:00PM</time>
+        
+            <div class="profile">
+        
+                <div class="titles">
+                    <h4>Lunch</h4>
+                </div>
+                
+                <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
+            </div>
+        </div>
     </div>
 </div>
 

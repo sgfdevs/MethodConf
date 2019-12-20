@@ -23,4 +23,10 @@
         outline: none;
         box-shadow: none;
     }
+    
+    @include mq-small
+    {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+    }
 }

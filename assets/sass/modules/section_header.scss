@@ -38,4 +38,9 @@
             }
         }
     }
+    
+    @include mq-large-tablet
+    {
+        padding: 90px $site_padding_small 0 $site_padding_small;
+    }
 }
