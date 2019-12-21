@@ -2,6 +2,11 @@
 
 <div class="speaker_card track_@Model.SessionType.ToString().ToLower()">
     <time>@Model.TimeLabel</time>
+    
+    <div class="profile mobile">
+        <h4>@Model.Title</h4>
+        <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
+    </div>
 
     <div class="profile">
         @if (Model.Speaker != null)

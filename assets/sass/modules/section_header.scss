@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     
     h3 {
         font-weight: bold;
@@ -41,6 +42,30 @@
     
     @include mq-large-tablet
     {
-        padding: 90px $site_padding_small 0 $site_padding_small;
+        background: #1A191A url("http://localhost:5000/images/line.svg") -8px 38px no-repeat;
+        padding: 38px $site_padding_small 0 $site_padding_small;
+        margin-bottom: 30px;
+        background-size: 30px;
+        
+        h3 {
+            font-size: 16px;
+            line-height: 24px;
+            border-top: 4px solid #D72F32;
+            padding: 12px 16px;
+        }
+        
+        .actions {
+            position: absolute;
+            bottom: -45px;
+            left: 0;
+            padding: 0 20px;
+            
+            a {
+                i {
+                    color: #1E1E1E;
+                    font-size: 1.25em;
+                }
+            }
+        }
     }
 }

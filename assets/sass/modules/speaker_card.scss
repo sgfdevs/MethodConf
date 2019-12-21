@@ -21,6 +21,10 @@
         margin-bottom: auto;
         margin-top: auto;
         
+        &.mobile {
+            display: none;
+        }
+        
         img {
             width: 68px;
             height: 68px;
@@ -79,6 +83,38 @@
         .profile {
             padding-top: 0;
             margin-left: 34px;
+        }
+    }
+    
+    @include mq-small
+    {
+        padding: 20px 11px;
+        
+        .profile.mobile {
+            display: flex;
+        }
+        
+        .profile:not(.mobile) {
+            .more, h4 {
+                display: none;
+            }
+        }
+        
+        time {
+            font-size: 16px;
+            line-height: 1em;
+        }
+        
+        .profile {
+            padding-top: 5px;
+            
+            h4 {
+                font-size: 20px;
+            }
+
+            a, .more, span {
+                font-size: 16px;
+            }
         }
     }
 }
