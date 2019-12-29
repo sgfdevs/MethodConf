@@ -12,6 +12,12 @@ document.getElementById('subscribe').addEventListener('submit', function (e) {
     e.preventDefault();
 });
 
+window.addeventasync = function(){
+    addeventatc.settings({
+        //css : false
+    });
+};
+
 $(function() {
     $('.more').on('click', function(){
         var parent = $(this).closest('.speaker_card');
