@@ -99,16 +99,7 @@ namespace MethodConf.Classes
                 SessionType = SessionType.Workshop,
                 Speaker = charlieRosenbury
             };
-            
-            var workshop2 = new Session
-            {
-                Title = "Coming Soon Part 1",
-                TimeLabel = "10:30AM-11:30AM",
-                Description = "",
-                SessionType = SessionType.Workshop,
-                Speaker = nilly
-            };
-            
+
             var lunch = new Session
             {
                 Title = "Lunch",
@@ -144,17 +135,8 @@ namespace MethodConf.Classes
                 SessionType = SessionType.Main,
                 Speaker = nilly
             };
-            
-            var workshop22 = new Session
-            {
-                Title = "Coming Soon Part 2",
-                TimeLabel = "1:00PM-2:00PM",
-                Description = "",
-                SessionType = SessionType.Workshop,
-                Speaker = nilly
-            };
-            
-            var workshop3 = new Session
+
+            var workshop2 = new Session
             {
                 Title = "Modern CSS with Grid and Flexbox",
                 TimeLabel = "2:15PM-4:30PM",
@@ -176,15 +158,13 @@ namespace MethodConf.Classes
             sessions.Add(mainSession2);
             sessions.Add(mainSession3);
             sessions.Add(workshop1);
-            sessions.Add(workshop2);
-            
+
             sessions.Add(lunch);
             
             sessions.Add(mainSession4);
             sessions.Add(mainSession5);
             sessions.Add(mainSession6);
-            sessions.Add(workshop22);
-            sessions.Add(workshop3);
+            sessions.Add(workshop2);
             
             sessions.Add(keynote);
 

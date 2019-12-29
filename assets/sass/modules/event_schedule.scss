@@ -50,28 +50,26 @@
         grid-template-areas: 
             "main1 workshop1"
             "main2 workshop1"
-            "main3 workshop2_1"
+            "main3 workshop1"
             "lunch lunch"
-            "main4 workshop2_2"
-            "main5 workshop3"
-            "main6 workshop3"
+            "main4 workshop2"
+            "main5 workshop2"
+            "main6 workshop2"
             "keynote keynote";
         
         .speaker_card:nth-child(1) { grid-area: main1; }
         .speaker_card:nth-child(2) { grid-area: main2; }
         .speaker_card:nth-child(3) { grid-area: main3; }
         .speaker_card:nth-child(4) { grid-area: workshop1; }
-        .speaker_card:nth-child(5) { grid-area: workshop2_1; }
 
-        .speaker_card:nth-child(6) { grid-area: lunch; }
+        .speaker_card:nth-child(5) { grid-area: lunch; }
 
-        .speaker_card:nth-child(7) { grid-area: main4; }
-        .speaker_card:nth-child(8) { grid-area: main5; }
-        .speaker_card:nth-child(9) { grid-area: main6; }
-        .speaker_card:nth-child(10) { grid-area: workshop2_2; }
-        .speaker_card:nth-child(11) { grid-area: workshop3; }
+        .speaker_card:nth-child(6) { grid-area: main4; }
+        .speaker_card:nth-child(7) { grid-area: main5; }
+        .speaker_card:nth-child(8) { grid-area: main6; }
+        .speaker_card:nth-child(9) { grid-area: workshop2; }
 
-        .speaker_card:nth-child(12) { grid-area: keynote; }
+        .speaker_card:nth-child(10) { grid-area: keynote; }
 
         .speaker_card:last-child {
             display: none;
@@ -97,25 +95,23 @@
             .speaker_card:nth-child(1) { order: 1; }
             .speaker_card:nth-child(2) { order: 2; }
             .speaker_card:nth-child(3) { order: 3; }
-            .speaker_card:nth-child(6) { order: 4; } // Lunch
-            .speaker_card:nth-child(7) { order: 5; }
-            .speaker_card:nth-child(8) { order: 6; }
-            .speaker_card:nth-child(9) { order: 7; }
+            .speaker_card:nth-child(5) { order: 4; } // Lunch
+            .speaker_card:nth-child(6) { order: 5; }
+            .speaker_card:nth-child(7) { order: 6; }
+            .speaker_card:nth-child(8) { order: 7; }
 
             // Workshop Track
             .speaker_card:nth-child(4) { order: 8; }
-            .speaker_card:nth-child(5) { order: 9; }
-            .speaker_card:last-child {   order: 10; display: block; } // Lunch
-            .speaker_card:nth-child(10) { order: 11; }
-            .speaker_card:nth-child(11) { order: 12; }
+            .speaker_card:last-child {   order: 9; display: block; } // Lunch
+            .speaker_card:nth-child(9) { order: 10; }
 
             // Keynote
-            .speaker_card:nth-child(12) { order: 13; }
+            .speaker_card:nth-child(10) { order: 11; }
 
             // Pseudo Headers
             .speaker_card:nth-child(1) { @include pseudo_header('Main Track') }
             .speaker_card:nth-child(4) { @include pseudo_header('Workshop Track') }
-            .speaker_card:nth-child(12) { @include pseudo_header('Keynote') }
+            .speaker_card:nth-child(10) { @include pseudo_header('Keynote') }
         }
     }
 }

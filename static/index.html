@@ -6,7 +6,7 @@
     <title>MethodConf</title>
     <script src="https://js.tito.io/v1" async></script>
 
-        <link rel="stylesheet" href="/css/styles.css?v=z2eJxJSeO-sdYZaUVDdM72zTaLGa-uaEMu1scc-ytjU" />   
+        <link rel="stylesheet" href="/css/styles.css?v=nQ0bXCPpzxfXPfQanJRxoh7TZz_HHuY6lrw1-IA-AVc" />   
 
     
     
@@ -103,23 +103,45 @@
         <h3>Event Schedule</h3>
     </div>
     <div class="actions">
-        <a href="#"><i class="fas fa-expand-alt"></i> <span>Show Extended Schedule</span></a>
+        <a href="#" id="expand_all"><i class="fas fa-expand-alt"></i> <span>Expand Full Schedule</span></a>
+        <a href="#" id="collapse_all" style="display: none;"><i class="fas fa-expand-alt"></i> <span>Collapse Schedule</span></a>
         <a href="#"><i class="fas fa-calendar-alt"></i> <span>Add To My Calendar</span></a>
     </div>
 </div>
 
 <div class="event_schedule s_container">
-    <h3>Thursday, March 5th, 2020</h3>
+    <h3 id="schedule_start">Thursday, March 5th, 2020</h3>
     
     <div class="speaker_card inline">
-        <time>7:00AM–8:00AM</time>
-    
-        <div class="profile">
-            <div class="titles">
+        <div class="content">
+            <time>7:00AM–8:00AM</time>
+                
+            <div class="profile mobile">
                 <h4>Attendee Check-in/Badge Pick-up</h4>
+                <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
             </div>
             
-            <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
+            <div class="profile">
+                <div class="titles">
+                    <h4>Attendee Check-in/Badge Pick-up</h4>
+                </div>
+                        
+                <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
+            </div>
+        </div>
+        
+        <div class="more_content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+            </p>
+                        
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+            </p>
+                        
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+            </p>
         </div>
     </div>
     
@@ -149,6 +171,20 @@
         
         <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
     </div>
+    
+    <div class="more_content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+                
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+                
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+    </div>
 </div>
 <div class="speaker_card track_main">
     <time>9:15AM&#x2013;10:15AM</time>
@@ -168,6 +204,20 @@
         </div>
         
         <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
+    </div>
+    
+    <div class="more_content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+                
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+                
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
     </div>
 </div>
 <div class="speaker_card track_main">
@@ -189,6 +239,20 @@
         
         <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
     </div>
+    
+    <div class="more_content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+                
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+                
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+    </div>
 </div>
 <div class="speaker_card track_workshop">
     <time>8:00AM-10:15AM</time>
@@ -209,25 +273,19 @@
         
         <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
     </div>
-</div>
-<div class="speaker_card track_workshop">
-    <time>10:30AM-11:30AM</time>
     
-    <div class="profile mobile">
-        <h4>Coming Soon Part 1</h4>
-        <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
-    </div>
-
-    <div class="profile">
-            <img src="/images/speakers/nilly.png" alt="Nilly">   
-
-        <div class="titles">
-            <h4>Coming Soon Part 1</h4>
-                <a href="#">Nilly</a>
-                <span>Mascot at Horsestrap</span>   
-        </div>
-        
-        <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
+    <div class="more_content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+                
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+                
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
     </div>
 </div>
 <div class="speaker_card track_lunch">
@@ -245,6 +303,20 @@
         </div>
         
         <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
+    </div>
+    
+    <div class="more_content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+                
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+                
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
     </div>
 </div>
 <div class="speaker_card track_main">
@@ -265,6 +337,20 @@
         </div>
         
         <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
+    </div>
+    
+    <div class="more_content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+                
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+                
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
     </div>
 </div>
 <div class="speaker_card track_main">
@@ -286,6 +372,20 @@
         
         <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
     </div>
+    
+    <div class="more_content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+                
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+                
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+    </div>
 </div>
 <div class="speaker_card track_main">
     <time>3:30PM&#x2013;4:30PM</time>
@@ -306,25 +406,19 @@
         
         <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
     </div>
-</div>
-<div class="speaker_card track_workshop">
-    <time>1:00PM-2:00PM</time>
     
-    <div class="profile mobile">
-        <h4>Coming Soon Part 2</h4>
-        <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
-    </div>
-
-    <div class="profile">
-            <img src="/images/speakers/nilly.png" alt="Nilly">   
-
-        <div class="titles">
-            <h4>Coming Soon Part 2</h4>
-                <a href="#">Nilly</a>
-                <span>Mascot at Horsestrap</span>   
-        </div>
-        
-        <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
+    <div class="more_content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+                
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+                
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
     </div>
 </div>
 <div class="speaker_card track_workshop">
@@ -346,6 +440,20 @@
         
         <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
     </div>
+    
+    <div class="more_content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+                
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+                
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+    </div>
 </div>
 <div class="speaker_card track_keynote">
     <time>4:30PM-5:30PM</time>
@@ -366,6 +474,20 @@
         
         <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
     </div>
+    
+    <div class="more_content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+                
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+                
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+        </p>
+    </div>
 </div>        
         <div class="speaker_card track_lunch">
             <time>11:30AM–1:00PM</time>
@@ -382,6 +504,20 @@
                 </div>
                 
                 <a href="#" class="more">More<i class="fas fa-chevron-down"></i></a>
+            </div>
+            
+            <div class="more_content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+                </p>
+                            
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+                </p>
+                            
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae debitis dicta ea error et facilis fuga illum impedit incidunt ipsum iste non quidem quod repellendus, sequi totam unde? Culpa.
+                </p>
             </div>
         </div>
     </div>
@@ -574,8 +710,9 @@
     </section>
 </footer>
 
+<script src="/lib/jquery/dist/jquery.js?v=oYqpLeqZe9cetUDV-TFiBZHp3uJ-X4F5eLs4W6uSTSE"></script>
 <script src="/js/plugins.js?v=S-gIn3Ie73sf2jeF_IvQ5ro5S0j0c1nMVz49N9reLS8"></script>
-<script src="/js/main.js?v=E9gjmuTzLuwt8IZDEBYlM9jiIiKtx-pN5ZbRRQSRTVw"></script>
+<script src="/js/main.js?v=FliAHOBHaS-zPB101llGgWZPAK7ex0PqEvfa8ZEZLbY"></script>
 
 
 
