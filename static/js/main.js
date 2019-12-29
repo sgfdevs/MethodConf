@@ -1,24 +1,16 @@
-document.getElementById('subscribe').addEventListener('submit', function (e) {
-    var name = document.getElementById('name'),
-        email = document.getElementById('email');
-    
-    swal('Excellent!', 'Thanks, ' + name.value + '. Method Conf news will be headed your way soon.', 'success');
-    
-    name.value = '';
-    email.value = '';
-    
-    // Post to Zapier
-    
-    e.preventDefault();
-});
-
-window.addeventasync = function(){
-    addeventatc.settings({
-        //css : false
-    });
-};
-
 $(function() {
+    $('#subscribe').on('submit', function (e) {
+        var name = $('#name'),
+            email = $('#email');
+
+        swal('Excellent!', 'Thanks, ' + name.value + '. Method Conf news will be headed your way soon.', 'success');
+
+        name.val('');
+        email.val('');
+
+        e.preventDefault();
+    });
+    
     $('.more').on('click', function(){
         var parent = $(this).closest('.speaker_card');
         parent.toggleClass('expanded');

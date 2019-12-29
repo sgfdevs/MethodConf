@@ -29,6 +29,10 @@
         display: inline-block;
     }
     
+    &.internal_page {
+        padding-bottom: 80px;
+    }
+    
     .skyline {
         background: url("/images/header_gradient.svg");
         background-size: cover;

@@ -12,6 +12,7 @@
     transition: transform 0.15s;
     border-radius: 0;
     outline: none;
+    border: 0;
     @include FontSourceSans;
     
     &:hover, &:not([disabled]):hover {
