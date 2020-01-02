@@ -43,7 +43,7 @@ namespace MethodConf.Classes
             var katieWomersly = new Speaker
             {
                 Image = "/images/speakers/katie_womersly.jpg",
-                Name = "Katie Womersly",
+                Name = "Katie Womersley",
                 Title = "VP of Engineering at Buffer",
                 Url = "#"
             };
